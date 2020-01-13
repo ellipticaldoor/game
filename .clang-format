@@ -1,0 +1,18 @@
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+ColumnLimit: 80
+ContinuationIndentWidth: 2
+UseTab: Never
+IndentWidth: 2
+TabWidth: 2
+IndentCaseLabels: true
+SortIncludes: true
+SortUsingDeclarations: true
+AlignAfterOpenBracket: AlwaysBreak
+AlignOperands: false
+BinPackArguments: false
+BinPackParameters: false
+SpacesInContainerLiterals: false
+Cpp11BracedListStyle: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Always

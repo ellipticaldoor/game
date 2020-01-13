@@ -1,0 +1,48 @@
+EXAMPLE LOCATION
+
+This is an example script for the dialogue system game's.
+The game will load this file into the game to generate dialogues between
+characters.
+
+Text lines like this are ignored, the purpose of them is to explain where
+characters are, context for the story, or anything that you can think of that
+can be useful.
+
+To create a dialogue that will load into the game you need to start the line you
+can use the following format:
+
+Use # to specify the name id of the dialogue
+Use @ for the name of the character
+Use - after author name to write the message
+Use > for the reply of the player
+Use / for comments
+
+Here is an example of a dialogue that will load into the game
+
+# exampleDialogueID
+@ foo - hello, this is the first message of character foo
+@ foo - this is the second one
+
+/ This line is just a comment that will be ignored
+@ foo - this is one can be replied, by the player
+> hi, I'm the player
+> I can reply to foo with different options
+> this is a third option
+
+@ bar - I'm another character, dialogues can have multiple characters
+@ bar - But the only one that can reply is the player
+@ bar - Player replies can be nested
+@ bar - This means a character can reply after player selects an answer
+> first answer
+  @ bar - so you picked the first answer
+  > yes
+  > I guess
+> second answer
+  @ bar - so you picked the second answer
+  > no
+    @ bar - oh! okay
+    > cool
+  > sometimes I do that
+    @ bar - I see
+    > see you
+@ bar - and this is the end of the dialogue
